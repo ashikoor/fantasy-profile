@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Cinematic Profile Card</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card" id="profile-card">
+      <div class="bg-grid"></div>
+      <div class="bg-particles" id="particles"></div>
+      <div class="circuit-lines" id="circuit-lines"></div>
+      <div class="glow-border"></div>
+      
+      <div class="header">
+        <div class="profile-picture-container">
+          <div class="rune-circles"></div>
+          <div class="aura-ring"></div>
+          <img class="profile-picture" src="/api/placeholder/400/400" alt="profile picture">
+        </div>
+        
+        <div class="profile-info">
+          <h1 class="name" id="profile-name">Aria Nightshade</h1>
+          <div class="title" id="profile-title">Arcane Techno-Mage</div>
+          <div class="metadata">
+            <div class="metadata-item has-tooltip">
+              <svg class="metadata-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+              </svg>
+              <span>Level 78</span>
+            </div>
+            <div class="metadata-item has-tooltip">
+              <svg class="metadata-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" fill="currentColor"/>
+              </svg>
+              <span>Nexus Protocol</span>
+            </div>
+            <div class="metadata-item has-tooltip">
+              <svg class="metadata-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" fill="currentColor"/>
+              </svg>
+              <span>Online</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-navigation">
+        <button class="tab-button active" data-tab="profile">Profile</button>
+        <button class="tab-button" data-tab="stats">Stats</button>
+        <button class="tab-button" data-tab="lore">Lore</button>
+      </div>
+      
+      <div id="profile-section" class="content-section profile-section active">
+        <p>Elite <span class="highlight">digital archeologist</span> specializing in the recovery of ancient code fragments from the pre-Collapse era.</p>
+        <p>Known for unlocking the secrets of the <span class="highlight">Quantum Cipher</span>, opening access to long-sealed databanks containing crucial knowledge from before the Great Digital Darkness.</p>
+        <p>Currently pursuing the mythical <span class="highlight">Ethereal Algorithm</span> — believed to be capable of interfacing directly with the fabric of reality.</p>
+      </div>
+      
+      <div id="stats-section" class="content-section stats-section">
+        <div class="stat-item">
+          <div class="stat-header">
+            <span class="stat-name has-tooltip">Neural Hacking</span>
+            <span class="stat-value">92</span>
+          </div>
+          <div class="stat-bar-container">
+            <div class="stat-bar" data-percentage="92"></div>
+          </div>
+          <div class="custom-tooltip">Ability to interface with and manipulate digital systems through neural implants</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-header">
+            <span class="stat-name has-tooltip">Arcane Knowledge</span>
+            <span class="stat-value">87</span>
+          </div>
+          <div class="stat-bar-container">
+            <div class="stat-bar" data-percentage="87"></div>
+          </div>
+          <div class="custom-tooltip">Comprehension of ancient algorithms and mystical computational theories</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-header">
+            <span class="stat-name has-tooltip">Mana Resonance</span>
+            <span class="stat-value">78</span>
+          </div>
+          <div class="stat-bar-container">
+            <div class="stat-bar" data-percentage="78"></div>
+          </div>
+          <div class="custom-tooltip">Energy manipulation for powering techno-magical artifacts</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-header">
+            <span class="stat-name has-tooltip">Code Weaving</span>
+            <span class="stat-value">95</span>
+          </div>
+          <div class="stat-bar-container">
+            <div class="stat-bar" data-percentage="95"></div>
+          </div>
+          <div class="custom-tooltip">Creating new digital constructs by weaving code and mana</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-header">
+            <span class="stat-name has-tooltip">Void Protection</span>
+            <span class="stat-value">65</span>
+          </div>
+          <div class="stat-bar-container">
+            <div class="stat-bar" data-percentage="65"></div>
+          </div>
+          <div class="custom-tooltip">Defensive capabilities against digital void entities</div>
+        </div>
+      </div>
+      
+      <div id="lore-section" class="content-section lore-section">
+        <h3>Origins</h3>
+        <p>Born in the underground data havens of Neo-Shanghai during the third decade after the Collapse. Orphaned during a data raid, Aria was taken in by the secretive <span class="lore-highlight">Order of the Digital Veil</span>.</p>
+        
+        <h3>Awakening</h3>
+        <p>At age 16, during a deep excavation of pre-Collapse archives, Aria accidentally triggered an ancient security protocol that fused with her neural implants. This unexpected merger awakened latent abilities to perceive and manipulate the underlying code that forms reality — the mythical <span class="lore-highlight">Arcane Syntax</span>.</p>
+        
+        <h3>The Great Hunt</h3>
+        <p>Now hunted by both corporate data miners and shadowy government agencies, Aria travels between secure nodes in the global network, searching for fragments of the legendary <span class="lore-highlight">Ethereal Algorithm</span> while offering her unique skills to those who can aid her quest.</p>
+        
+        <h3>Nexus Protocol</h3>
+        <p>Recently inducted into the secretive <span class="lore-highlight">Nexus Protocol</span> — an alliance of tech-mages and digital archeologists working to prevent another Collapse by recovering and safeguarding ancient knowledge.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
